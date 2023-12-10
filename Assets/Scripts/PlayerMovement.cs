@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     
     private Vector2 moveInput;
     private Rigidbody2D myRigidbody;
-    private CapsuleCollider2D myCapsuleCollider;
+    private CapsuleCollider2D myBodyCollider;
+    private BoxCollider2D myFeetCollider;
     
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        myBodyCollider = GetComponent<CapsuleCollider2D>();
+        myFeetCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             return;
         }
