@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float runSpeed = 10f;
     [SerializeField] private float jumpSpeed = 10f;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform gun;
     
     private Vector2 moveInput;
     private Rigidbody2D myRigidbody;
@@ -60,5 +62,11 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
         }
 
+    }
+
+    void OnFire(InputValue value)
+    {
+        //if(!isAlive){return;}
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 }
