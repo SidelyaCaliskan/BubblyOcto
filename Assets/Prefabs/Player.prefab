@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7895181567238975119}
   - component: {fileID: 4643332511204271073}
   - component: {fileID: 3198745875014800782}
+  - component: {fileID: 5489677646928953379}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -108,7 +109,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1014263847
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2a5c2f3ca4ae14e7e91149316db1e054, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -229,6 +230,7 @@ MonoBehaviour:
   jumpSpeed: 20
   bullet: {fileID: 4386535860144891014, guid: f6d2f6ba0a343a840baac38957c1a6f0, type: 3}
   gun: {fileID: 1233696724809760085}
+  deathJump: {x: 10, y: 10}
 --- !u!61 &3198745875014800782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -238,7 +240,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7294075308245230102}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e021cc589a24798478a605e75ce42642, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -274,3 +276,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44311905, y: 0.08497876}
   m_EdgeRadius: 0
+--- !u!95 &5489677646928953379
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294075308245230102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb605089d3be80e48a0158788f46ed7d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
