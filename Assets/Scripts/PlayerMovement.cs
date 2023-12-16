@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator myAnimator;
 
     private bool isAlive = true;
+
+    
     
     void Start()
     {
@@ -88,4 +90,7 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = deathJump;
         }
     }
+
+
+    
 }
