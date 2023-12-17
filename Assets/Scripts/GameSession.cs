@@ -52,6 +52,7 @@ public class GameSession : MonoBehaviour
 
     void ResetGameSession()
     {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         //checkpoint de olabilir
         SceneManager.LoadScene(0);
         Destroy(gameObject);
