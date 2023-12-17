@@ -13,7 +13,6 @@ public class CoinManager : MonoBehaviour
 
     public TMP_Text coinText;
 
-
     // Start is called before the first frame update
     void Start()
     {

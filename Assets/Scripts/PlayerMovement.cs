@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathJump;
+            FindObjectOfType<GameSession>().ProcessPLayerDeath();
         }
     }
 
@@ -101,8 +102,5 @@ public class PlayerMovement : MonoBehaviour
         }
             
     }
-
-
-
     
 }
