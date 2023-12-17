@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator myAnimator;
 
     private bool isAlive = true;
-
-    public CoinManager cm;
     
     void Start()
     {
@@ -90,17 +88,6 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = deathJump;
             FindObjectOfType<GameSession>().ProcessPLayerDeath();
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            Destroy(other.gameObject);
-
-            cm.CoinCount ++;
-        }
-            
     }
     
 }

@@ -1,11 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] private int playerLives = 3;
+    [SerializeField] private int coins = 0;
+
+    [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI coinsText;
+    
     void Awake()
     {
         int numberOfGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -17,6 +24,12 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        livesText.text = playerLives.ToString();
+        coinsText.text = coins.ToString();
     }
 
     public void ProcessPLayerDeath()
@@ -31,6 +44,12 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    public void AddToCoins()
+    {
+        coins++;
+        coinsText.text = coins.ToString();
+    }
+
     void ResetGameSession()
     {
         //checkpoint de olabilir
@@ -43,5 +62,6 @@ public class GameSession : MonoBehaviour
         playerLives--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+        livesText.text = playerLives.ToString();
     }
 }
