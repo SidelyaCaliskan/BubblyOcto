@@ -21,7 +21,7 @@ TagManager:
   - Enemies
   - Hazards
   - Exit
-  - 
+  - Coins
   - 
   - 
   - 
@@ -57,6 +57,9 @@ TagManager:
     locked: 0
   - name: Exit
     uniqueID: 1266458135
+    locked: 0
+  - name: Coin
+    uniqueID: 369142659
     locked: 0
   - name: Enemy
     uniqueID: 1074403551
