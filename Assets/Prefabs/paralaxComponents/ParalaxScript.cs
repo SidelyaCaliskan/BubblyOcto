@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ParalaxScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] 
+    private  float parallaxSpeed;
+private Transform cameraTransform;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+private void private void Start() {
+    cameraTransform = Camera.main.transform;
+
+}
+
+private void void Update()
+{
+    float relativeDist = cameraTransform.position.x * parallazSpeed;
+    transform.position = new Vector3(relativeDist, transformPosition.y, transformPosition.z);
+}
 }
