@@ -36,11 +36,11 @@ public class GameSession : MonoBehaviour
     {
         if (playerLives > 1)
         {
-            TakeLife();
+            Invoke(nameof(TakeLife), 1);
         }
         else
         {
-            ResetGameSession();
+            Invoke(nameof(ResetGameSession), 1);
         }
     }
 
