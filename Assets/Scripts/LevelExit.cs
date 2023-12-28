@@ -26,7 +26,6 @@ public class LevelExit : MonoBehaviour
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            //victory screen de gelebilir
             nextSceneIndex = 0;
         }
         
