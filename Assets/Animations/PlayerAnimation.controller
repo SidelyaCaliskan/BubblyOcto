@@ -26,14 +26,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2974450836413198529
+--- !u!1102 &-5602412886903422961
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerDeathAnimation
+  m_Name: Player Death Animation
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8488ee6e46ce4794cbdff40ce3ff8a8b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0791111577910ee40b857532336cf0cc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -80,7 +80,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &4500047512436389260
+--- !u!1101 &6156383853280392813
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Dying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -2974450836413198529}
+  m_DstState: {fileID: -5602412886903422961}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -118,11 +118,11 @@ AnimatorStateMachine:
     m_State: {fileID: -6067441839495847143}
     m_Position: {x: 420, y: 110, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2974450836413198529}
-    m_Position: {x: 740, y: 0, z: 0}
+    m_State: {fileID: -5602412886903422961}
+    m_Position: {x: 740, y: 10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
-  - {fileID: 4500047512436389260}
+  - {fileID: 6156383853280392813}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
