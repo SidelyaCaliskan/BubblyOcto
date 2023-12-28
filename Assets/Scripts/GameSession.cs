@@ -50,10 +50,9 @@ public class GameSession : MonoBehaviour
         coinsText.text = coins.ToString();
     }
 
-    void ResetGameSession()
+    public void ResetGameSession()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        //checkpoint de olabilir
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
