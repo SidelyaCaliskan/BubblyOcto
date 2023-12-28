@@ -86,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathJump;
+            myBodyCollider.enabled = false;
+            myFeetCollider.enabled = false;
             FindObjectOfType<GameSession>().ProcessPLayerDeath();
         }
     }

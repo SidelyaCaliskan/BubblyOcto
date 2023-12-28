@@ -230,7 +230,7 @@ MonoBehaviour:
   jumpSpeed: 20
   bullet: {fileID: 4386535860144891014, guid: f6d2f6ba0a343a840baac38957c1a6f0, type: 3}
   gun: {fileID: 1233696724809760085}
-  deathJump: {x: 10, y: 10}
+  deathJump: {x: 0, y: 25}
 --- !u!61 &3198745875014800782
 BoxCollider2D:
   m_ObjectHideFlags: 0
