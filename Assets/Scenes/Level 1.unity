@@ -22445,6 +22445,70 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa8b9be33bef1b743ae5ebb77c026845, type: 3}
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &2766910462938958271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 456313840}
+    m_Modifications:
+    - target: {fileID: 1362179218711112475, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092033637882608657, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_Name
+      value: Enemy Crab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.090754
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.862582
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.195471
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512453260595749993, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8d0d33ed95a95c4ba81994d1cecc204, type: 3}
+>>>>>>> Stashed changes
 --- !u!1001 &5028490599584485163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22618,6 +22682,10 @@ PrefabInstance:
     - target: {fileID: 7513092972868588972, guid: fc42a707509fb8f4e993839410c9c4b4, type: 3}
       propertyPath: m_Name
       value: Coin 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513092972868588972, guid: fc42a707509fb8f4e993839410c9c4b4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
