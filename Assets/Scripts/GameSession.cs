@@ -52,6 +52,8 @@ public class GameSession : MonoBehaviour
 
     public void ResetGameSession()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject);
