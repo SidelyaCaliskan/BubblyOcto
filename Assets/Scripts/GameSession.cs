@@ -36,11 +36,11 @@ public class GameSession : MonoBehaviour
     {
         if (playerLives > 1)
         {
-            TakeLife();
+            Invoke(nameof(TakeLife), 2f);
         }
         else
         {
-            ResetGameSession();
+            Invoke(nameof(ResetGameSession), 2f);
         }
     }
 
@@ -52,6 +52,8 @@ public class GameSession : MonoBehaviour
 
     public void ResetGameSession()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject);
